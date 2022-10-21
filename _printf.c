@@ -11,6 +11,8 @@ int print_handler(const char *format, va_list args)
 int state = 0;
 int count = 0;
 
+if (!format)
+return (0);
 while (*format)
 {
 if (state == 0)
